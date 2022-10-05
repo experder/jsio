@@ -1,2 +1,4 @@
 /.idea/
 /libraries/
+demo_*.json
+/geocode/api_keys.js

@@ -3,6 +3,7 @@
 <head>
     <!-- script type='text/javascript' src='../libraries/jquery3_4_1.min.js'></script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type='text/javascript' src='api_keys.js'></script>
     <script type='text/javascript' src='../logic.js'></script>
     <script type='text/javascript' src='logic.js'></script>
     <link rel="stylesheet" href="style.css">
@@ -12,9 +13,19 @@
 <body>
 
 <textarea id="myin" class="big"></textarea>
+
+<input type="radio" name="service" value="nominatim" checked>Nominatim
+<!-- input type="radio" name="service" value="geokeo">GeoKeo-->
+<!-- input type="radio" name="service" value="xyz">Geocode.xyz-->
+<input type="radio" name="service" value="geoapify">Geoapify
+
 <input type="button" value="Process" onclick="process('geocode');">
 <span id="progress"></span>
 <textarea id="myout" class="big"></textarea>
+This service uses data provided by nominatim.openstreetmap.org. <!-- https://nominatim.org/release-docs/latest/api/Search/ -->
+<!-- This service uses data provided by geokeo.com. <!-- https://geokeo.com/documentation.php -->
+<!-- This service uses data provided by Geocode.xyz. <!-- https://geocode.xyz/api -->
+This service uses data provided by geoapify.com. <!-- https://apidocs.geoapify.com/docs/geocoding/forward-geocoding/#about -->
 
 </body>
 </html>
