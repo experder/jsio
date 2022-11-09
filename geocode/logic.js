@@ -113,8 +113,8 @@ function geocode_line_simple(data){
     return null;
 }
 function geocode_format_latlon(lat,lon){
-    lat = (lat*1).toFixed(7);
-    lon = (lon*1).toFixed(7);
+    lat = Number((lat*1).toFixed(5));
+    lon = Number((lon*1).toFixed(5));
     return lat+","+lon;
 }
 function geocode_single(address, limit=1, callback=function(data){console.log(data);}){
