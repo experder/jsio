@@ -20,6 +20,11 @@ const lob=[
     "Richtig gerechnet",
     "Gratuliere",
     "Gratulation",
+    "Aufgabe gelöst",
+    "Richtig gelöst",
+    "Das stimmt",
+    "Stimmt",
+    "Genau richtig",
 ];
 function mathfriend(){
     answer = randomIntFromInterval(0, highest_result);
